@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './componant/Header';
+// import Sidebar from './componant/Sidebar'
+import Drag from './componant/DragandDrop/App'
+// import { create, useStore } from 'zustand';
+
+// const ZustandProvider = ({ children }) => {
+//   return <>{children}</>;
+// };
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   {/* <ZustandProvider> */}
+   <Header/>
+   {/* <Sidebar/> */}
+   {/* <Drag/> */}
+   {/* </ZustandProvider> */}
+   
+   </>
   );
 }
 
