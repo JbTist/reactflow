@@ -2,13 +2,13 @@
     display: flex;
     /* flex-direction: ; */
 }
-.left{
+.leftt{
     width: 10%;
     padding: 20px;
     height: 90vh;
     background-color: rgb(250, 247, 243);
 }
-.right{
+.rightt{
     margin: 0%;
     padding: 10px;
     width: 100%;
@@ -32,12 +32,12 @@
 
 
 
-/* .dndflow {
+.dndflow {
   flex-direction: column;
   display: flex;
   flex-grow: 1;
   height: 100%;
-} */
+}
 
 .dndflow aside {
   border-right: 1px solid #eee;
@@ -51,70 +51,39 @@
 }
 
  .dndnode {
-  height: 20px;
+  height: 25px;
   margin-bottom:20% ;
   margin-top: 30%;
   padding: 4px;
-  border: 1px solid #1a192b;
   border-radius: 2px;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: grab;
-  border-color: #0041d0;
+  color: white;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.dndnode:hover{
+  background-position: right center;
 }
 
-.dndflow .dndnode.input {
-  border-color: #0041d0;
-}
+
 
 .dndflow .dndnode.output {
   border-color: #ff0072;
 }
 
-.dndflow .reactflow-wrapper {
-  flex-grow: 1;
-  height: 100%;
+.react-flow__panel {
+  position: absolute;
+  z-index: 5;
+  margin: 3px;
+  margin-top: 22%;
 }
 
-/* .dndflow .selectall {
-  margin-top: 10px;
-} */
-
-@media screen and (min-width: 768px) {
-  .dndflow {
-    flex-direction: row;
-  }
-
-  .dndflow aside {
-    width: 20%;
-    max-width: 250px;
-  }
-}
-
-.react-flow__node-default, .react-flow__node-group, .react-flow__node-input, .react-flow__node-output {
-  background: #fff;
-  border: 1px solid #1a192b;
-  border-radius: 3px;
-  color: #222;
-  font-size: 12px;
-  padding: 0px;
-  text-align: center;
-  width: 84px;
-}
-
-/* .reactflow-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ccc;
-} */
-
-.react-flow__node-selectorNode {
-  font-size: 12px;
-  background: #eee;
-  border: 1px solid #555;
-  border-radius: 5px;
-  text-align: center;
+.react-flow__attribution a {
+  display: none;
 }
